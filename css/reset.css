@@ -1,0 +1,39 @@
+/* Reset styles for modern web development */
+
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margin and padding */
+  body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, figcaption, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default font size and line height */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Remove list styles (bullets/numbers) */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove hyperlink styling */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove borders and outlines */
+  img, iframe, video, svg {
+    border: 0;
+    outline: 0;
+  }

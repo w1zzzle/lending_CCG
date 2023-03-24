@@ -1,3 +1,4 @@
+//==================== Yandex map ====================
 let center = [58.13957631670024,52.67546458055673];
 
 function init() {
@@ -24,7 +25,7 @@ function init() {
       iconImageOffset: [-19, -44],
     }
   );
-  
+
   map.controls.remove("geolocationControl"); // удаляем геолокацию
   map.controls.remove("searchControl"); // удаляем поиск
   map.controls.remove("trafficControl"); // удаляем контроль трафика
@@ -37,3 +38,33 @@ function init() {
 }
 
 ymaps.ready(init);
+//==================== Add weather with api ==================== youtube guide - https://www.youtube.com/live/2yi252YNGKU?feature=share
+
+/*const apiKeyWeather = 'd66f080c8be64bb38e543249232403';
+const queryWeather = `http://api.weatherapi.com/v1/current.json?key=${apiKeyWeather}&q=Glazov`;
+
+fetch(queryWeather).then((response) => {
+  return response.json()
+}).then((data) => {
+  console.log(data);
+  console.log(data.current.temp_c);
+  console.log(data.current.feelslike_c);
+  console.log(data.current.condition.text);
+}) */
+
+//==================== Smooth background change ==================== 24.03.2023
+
+// const backgroundImg = [
+//   './img/promo.jpg',
+//   './img/photo1.jpg',
+//   './img/photo2.jpg'
+// ];
+// const delay = 5000;
+// let currentIndex = 0;
+// setInterval(function() {
+//     document.getElementById('image').src = backgroundImg[currentIndex];
+//     currentIndex++;
+//     if(currentIndex >= backgroundImg.length) {
+//         currentIndex = 0;
+//     }
+// }, delay);

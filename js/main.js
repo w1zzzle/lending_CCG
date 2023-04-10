@@ -91,6 +91,7 @@ ymaps.ready(init);
 
 let header = document.querySelector('header');
 let headerH = document.querySelector('header').clientHeight;
+<<<<<<< Updated upstream
 
 document.onscroll = function () {
     let scroll = window.scrollY;

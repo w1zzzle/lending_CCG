@@ -1,6 +1,21 @@
-@font-face {
+/* @font-face {
     font-family: 'Impact', sans-serif;
     src: url(../fonts/Impact.woff2);
+} */
+
+h2 {
+    font-size: 36px;
+    animation: pulsate-text 1.5s infinite alternate;  
+    color: #ffffff;
+    /* text-shadow:
+        0 0 7px #ffffff,
+        0 0 10px #fff,
+        0 0 13px #fff,
+        0 0 16px #bc13fe,
+        0 0 19px #bc13fe,
+        0 0 22px #bc13fe,
+        0 0 25px #bc13fe,
+        0 0 28px #bc13fe; */
 }
 
 p {
@@ -8,18 +23,57 @@ p {
 }
 
 body {
-    /* font-family: "Impact", sans-serif; */
     color: #ffffff;
     font-size: 22px;
     line-height: 1.2;
+    background-color: #000000;
 }
 
+.advantages-menu,
+.about-menu,
+.price-menu,
+.review-menu,
+.contact-menu {
+    margin-top: 120px;
+}
+
+.box,
+.about-menu,
+.price-slider,
+.review-text,
+.contact-menu {
+    animation: pulsate-box 1.5s infinite alternate; 
+    border: 0.2rem solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+    border-radius: 25px;
+}
+
+.nav-about-menu:hover,
+.nav-advantages-menu:hover,
+.nav-price-menu:hover,
+.nav-review-menu:hover,
+.nav-contact-menu:hover{
+    cursor: pointer;
+    color: #bc13fe;
+}
+/* ================ HEADER ================  */
 .header {
-    padding-top: 20px;
-    position: absolute;
+    padding: 10px;
     width: 100%;
-    background: linear-gradient(180deg, #01241398 0%,
-            rgba(217, 217, 217, 0) 100%);
+    left: 0;
+    transition: all .2s ease;
+    background-color: rgba(3, 59, 1, 0.596);
+    top: -100px;
+}
+
+.header.fixed {
+    position: fixed;
+    transform: translateY(100px);
 }
 
 .container {
@@ -29,107 +83,142 @@ body {
 }
 
 .nav {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.menu-left {
-    width: 270px;
-    display: flex;
-    gap: 0 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+.logo {
+    width: 90px;
 }
 
-.logo {
-    width: 110px;
+.menu-center {
+    display: flex;
+    gap: 0 40px;
 }
 
 .menu-right {
-    width: 270px;
-    gap: 0 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+
+}
+/* ================ MAIN ================ */
+
+.main {
+    width: 100%;
+    margin: 0 auto;
 }
 
-/* ================ MAIN ================ */
 .main-info {
-    font-family: 'Impact', sans-serif;
-    background-image: url(../img/promo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    padding-top: 250px;
 }
 
-.title {
-    font-size: 96px;
-    /* letter-spacing: 0.02em; */
-    margin-bottom: 10px;
+.main-logo {
+    width: 1440px;
+}
+/* ================ ADVANTAGES ================ */
+.advantages-box{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px 100px;
 }
 
-.subtitle {
-    font-size: 38px;
-    margin-bottom: 10px;
+.box {
+    height: 280px;
 }
-
-.subtitleinfo {
+/* ================ ABOUT ================ */
+.about-menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0 40px;
-    font-size: 35px;
-    padding: 10px 0;
-    padding-top: 100px;
-    color: #00f7fffa;
-    border-bottom: 4px solid #00f7fffa;
 }
 
-/* ================ FOOTER ================ */
-
-footer {
-    background-color: black;
+.about-pics {
+    width: 800px;
+    border-radius: 25px;
 }
 
-.container-footer {
-    max-width: 90%;
-    padding: 20px 10px;
+.about-text {
+
+}
+/* ================ PRICE MENU ================  */
+.price-menu {
+
+}
+
+.price-titles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.price-pc,
+.price-kitchen {
+    cursor: pointer;
+}
+
+.price-slider {
+    width: 1200px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.price-box {
+    width: 2410px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.price-img {
+    width: 1200px;
+    height: 660px;
+}
+/* ================ REVIEW-MENU ================  */
+.review-menu{
+    max-width: 1200px;
+}
+
+/* .review-titles {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
+    height: 200px;
+    gap: 0 30px;
+} */
+
+.review-text {
+
+}
+/* ================ CONTACT-MENU ================  */
+
+.contact-menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-.content {
+.contact-text {
+
+}
+
+.links {
     display: flex;
-    justify-content: space-between;
 }
 
-.content-info {
-    padding: 0 20px;
-    font-size: 24px;
-}
-
-.bold {
-    color: rgb(2, 217, 255);
-    font-size: 34px;
-}
-
-h2 {
-    margin-bottom: 30px;
-}
-
-.inst {
+.link-logo {
     width: 40px;
+    height: 40px
 }
 
 .map {
-    width: 100%;
     height: 500px;
     background-color: #333;
 }
+/* ================ FOOTER ================ */
+
 
 /* Detele copyright panel from ya.Map */
 [class*="copyrights-pane"] {
@@ -139,4 +228,60 @@ h2 {
 /* Delete color from ya.Map */
 [class*="ground-pane"] {
     filter: grayscale(1);
+}
+
+@keyframes pulsate-box {
+    
+    100% {
+    box-shadow:
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 12px #fff,
+        0 0 16px #fff,
+        0 0 20px #fff,
+        0 0 24px #fff,
+        0 0 28px #fff,
+        0 0 32px #fff;
+    
+    }
+    
+    0% {
+    box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 8px #fff,
+        0 0 12px #fff,
+        0 0 14px #fff,
+        0 0 16px #fff,
+        0 0 18px #fff;   
+}
+}
+
+@keyframes pulsate-text {
+    
+    0% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 12px #fff,
+        0 0 16px #fff,
+        0 0 20px #fff,
+        0 0 24px #fff,
+        0 0 28px #fff,
+        0 0 32px #fff;
+    
+    }
+    
+    100% {
+        text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 8px #fff,
+        0 0 12px #fff,
+        0 0 14px #fff,
+        0 0 16px #fff,
+        0 0 18px #fff;
+}
 }

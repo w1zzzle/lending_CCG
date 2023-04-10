@@ -4,7 +4,7 @@ let center = [58.13957631670024, 52.67546458055673];
 function init() {
     let map = new ymaps.Map("map-test", {
         center: center,
-        zoom: 17,
+        zoom: 16,
     });
 
     let placemark = new ymaps.Placemark(center, {
@@ -36,35 +36,80 @@ function init() {
     // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
     map.geoObjects.add(placemark); // вставляем метку
 }
-
 ymaps.ready(init);
-//==================== Add weather with api ==================== youtube guide - https://www.youtube.com/live/2yi252YNGKU?feature=share
 
-/*const apiKeyWeather = 'd66f080c8be64bb38e543249232403';
-const queryWeather = `http://api.weatherapi.com/v1/current.json?key=${apiKeyWeather}&q=Glazov`;
+// window.addEventListener("scroll", e => {
+// let navbar = document.getElementById("navbar").classList
+// let active_class = "navbar_scrolled"
 
-fetch(queryWeather).then((response) => {
-  return response.json()
-}).then((data) => {
-  console.log(data);
-  console.log(data.current.temp_c);
-  console.log(data.current.feelslike_c);
-  console.log(data.current.condition.text);
-}) */
+//      if (pageYOffset > 120)
+//         navbar.add(active_class)
+//     else
+//         navbar.remove(active_class)
+// })
 
-//==================== Smooth background change ==================== 24.03.2023
+let header = document.querySelector('header');
+let headerH = document.querySelector('header').clientHeight;
 
-// const backgroundImg = [
-//   './img/promo.jpg',
-//   './img/photo1.jpg',
-//   './img/photo2.jpg'
-// ];
-// const delay = 5000;
-// let currentIndex = 0;
-// setInterval(function() {
-//     document.getElementById('image').src = backgroundImg[currentIndex];
-//     currentIndex++;
-//     if(currentIndex >= backgroundImg.length) {
-//         currentIndex = 0;
-//     }
-// }, delay);
+document.onscroll = function () {
+    let scroll = window.scrollY;
+
+    if (scroll > headerH) {
+        header.classList.add('fixed');
+        document.body.style.paddingTop = headerH + 'px';
+    }
+    else{
+    header.classList.remove('fixed')
+    document.body.removeAttribute('style')
+    }
+}
+
+/* =============== PRICE MENU SLIDER =============== */ 
+let offSet = 0;
+const priceSlider = document.querySelector('.price-box');
+
+document.querySelector('.price-pc').addEventListener('click', function() {
+    offSet = 0;
+    priceSlider.style.left = -offSet + 'px'
+});
+
+document.querySelector('.price-kitchen').addEventListener('click', function() {
+    offSet = -1200;
+    priceSlider.style.left = offSet + 'px'
+});
+/* =============== =============== =============== */ 
+
+var aboutMenu = document.getElementById("about-menu");
+var advantagesMenu = document.getElementById("advantages-menu");
+var priceMenu = document.getElementById("price-menu");
+var reviewMenu = document.getElementById("review-menu");
+var contactMenu = document.getElementById("contact-menu");
+
+var navAboutMenu = document.querySelector('.nav-about-menu');
+var navAdvantagesMenu = document.querySelector('.nav-advantages-menu');
+var navPriceMenu = document.querySelector('.nav-price-menu');
+var navReviewMenu  = document.querySelector('.nav-review-menu');
+var navContactMenu = document.querySelector('.nav-contact-menu');
+
+function aboutMenuScroll() {
+    aboutMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function advantagesMenuScroll() {
+    advantagesMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function priceMenuScroll() {
+    priceMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function reviewMenuScroll() {
+    reviewMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function contactMenuScroll() {
+    contactMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
+
+navAboutMenu.addEventListener('click', aboutMenuScroll);
+navAdvantagesMenu.addEventListener('click', advantagesMenuScroll);
+navPriceMenu.addEventListener('click', priceMenuScroll);
+navReviewMenu.addEventListener('click', reviewMenuScroll);
+navContactMenu.addEventListener('click', contactMenuScroll);

@@ -155,3 +155,68 @@ navPriceMenu.addEventListener('click', priceMenuScroll);
 navReviewMenu.addEventListener('click', reviewMenuScroll);
 navContactMenu.addEventListener('click', contactMenuScroll);
 
+=======
+
+document.onscroll = function () {
+    let scroll = window.scrollY;
+
+    if (scroll > headerH) {
+        header.classList.add('fixed');
+        document.body.style.paddingTop = headerH + 'px';
+    }
+    else{
+    header.classList.remove('fixed')
+    document.body.removeAttribute('style')
+    }
+}
+
+/* =============== PRICE MENU SLIDER =============== */ 
+let offSet = 0;
+const priceSlider = document.querySelector('.price-box');
+
+document.querySelector('.price-pc').addEventListener('click', function() {
+    offSet = 0;
+    priceSlider.style.left = -offSet + 'px'
+});
+
+document.querySelector('.price-kitchen').addEventListener('click', function() {
+    offSet = -1200;
+    priceSlider.style.left = offSet + 'px'
+});
+/* =============== =============== =============== */ 
+
+var aboutMenu = document.getElementById("about-menu");
+var advantagesMenu = document.getElementById("advantages-menu");
+var priceMenu = document.getElementById("price-menu");
+var reviewMenu = document.getElementById("review-menu");
+var contactMenu = document.getElementById("contact-menu");
+
+var navAboutMenu = document.querySelector('.nav-about-menu');
+var navAdvantagesMenu = document.querySelector('.nav-advantages-menu');
+var navPriceMenu = document.querySelector('.nav-price-menu');
+var navReviewMenu  = document.querySelector('.nav-review-menu');
+var navContactMenu = document.querySelector('.nav-contact-menu');
+
+function aboutMenuScroll() {
+    aboutMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function advantagesMenuScroll() {
+    advantagesMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function priceMenuScroll() {
+    priceMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function reviewMenuScroll() {
+    reviewMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+function contactMenuScroll() {
+    contactMenu.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
+
+navAboutMenu.addEventListener('click', aboutMenuScroll);
+navAdvantagesMenu.addEventListener('click', advantagesMenuScroll);
+navPriceMenu.addEventListener('click', priceMenuScroll);
+navReviewMenu.addEventListener('click', reviewMenuScroll);
+navContactMenu.addEventListener('click', contactMenuScroll);
+>>>>>>> Stashed changes

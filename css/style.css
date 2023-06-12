@@ -1,225 +1,87 @@
-/* @font-face {
-    font-family: 'Impact', sans-serif;
-    src: url(../fonts/Impact.woff2);
+@import "../css/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
+/* 
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+/* * {
+	border: 1px solid red;
 } */
 
-h2 {
-    font-size: 36px;
-    animation: pulsate-text 1.5s infinite alternate;  
-    color: #ffffff;
-    /* text-shadow:
-        0 0 7px #ffffff,
-        0 0 10px #fff,
-        0 0 13px #fff,
-        0 0 16px #bc13fe,
-        0 0 19px #bc13fe,
-        0 0 22px #bc13fe,
-        0 0 25px #bc13fe,
-        0 0 28px #bc13fe; */
+.none {
+    display: none !important;
 }
 
-p {
-    font-size: 18px;
+:root {
+    --black: #000;
+    --black-bg: #171718;
+    --white: #fff;
+    --darkgreen: #003a00;
+    
+    --dark-bg: var(--black-bg);
+    --accent: var(--darkgreen);
 }
 
+html, 
 body {
+    font-family: "DM Sans", sans-serif;
     color: #ffffff;
     font-size: 22px;
     line-height: 1.2;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
-.advantages-menu,
-.about-menu,
-.price-menu,
-.review-menu,
-.contact-menu {
-    margin-top: 120px;
-}
 
-.box,
-.about-menu,
-.price-slider,
-.review-text,
-.contact-menu {
-    animation: pulsate-box 1.5s infinite alternate; 
-    border: 0.2rem solid #fff;
-    box-shadow: 0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem #bc13fe,
-    0 0 0.8rem #bc13fe,
-    0 0 2.8rem #bc13fe,
-    inset 0 0 1.3rem #bc13fe;
-    border-radius: 25px;
-}
-
-.nav-about-menu:hover,
-.nav-advantages-menu:hover,
-.nav-price-menu:hover,
-.nav-review-menu:hover,
-.nav-contact-menu:hover{
-    cursor: pointer;
-    color: #bc13fe;
-}
-/* ================ HEADER ================  */
-.header {
-    padding: 10px;
-    width: 100%;
-    left: 0;
-    transition: all .2s ease;
-    background-color: rgba(3, 59, 1, 0.596);
-    top: -100px;
-}
-
-.header.fixed {
-    position: fixed;
-    transform: translateY(100px);
-}
-
+/* ================ General ================ */
 .container {
-    max-width: 1220px;
-    padding: 20px 10px;
-    margin: 0 auto;
+
 }
 
+.section {
+
+}
+
+.title-1 {
+
+}
+
+.title-2 {
+
+}
+/* ================ Header ================ */
+.header {
+
+}
+
+/* ================ Nav ================ */
 .nav {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.logo {
-    width: 90px;
+.nav-row {
+}
+.nav-list {
+}
+.nav-list__item {
 }
 
-.menu-center {
-    display: flex;
-    gap: 0 40px;
-}
+/* ================ Header items ================ */
 
-.menu-right {
+/* ================ Main ================ */
 
-}
-/* ================ MAIN ================ */
+/* ================ Advantages ================ */
 
-.main {
-    width: 100%;
-    margin: 0 auto;
-}
+/* ================ About ================ */
 
-.main-info {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    text-align: center;
-}
+/* ================ Prices ================ */
 
-.main-logo {
-    width: 1440px;
-}
-/* ================ ADVANTAGES ================ */
-.advantages-box{
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px 100px;
-}
+/* ================ Contacts ================ */
 
-.box {
-    height: 280px;
-}
-/* ================ ABOUT ================ */
-.about-menu {
-    display: flex;
-}
-
-.about-pics {
-    width: 800px;
-    border-radius: 25px;
-}
-
-.about-text {
-
-}
-/* ================ PRICE MENU ================  */
-.price-menu {
-
-}
-
-.price-titles {
-    display: flex;
-    justify-content: space-around;
-}
-
-.price-pc,
-.price-kitchen {
-    cursor: pointer;
-}
-
-.price-slider {
-    width: 1200px;
-    border: 1px solid black;
-    overflow: hidden;
-}
-
-.price-box {
-    width: 2410px;
-    display: flex;
-    position: relative;
-    left: 0;
-    transition: all ease 1s;
-}
-
-.price-img {
-    width: 1200px;
-    height: 660px;
-}
-/* ================ REVIEW-MENU ================  */
-.review-menu{
-    max-width: 1200px;
-}
-
-/* .review-titles {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
-    height: 200px;
-    gap: 0 30px;
-} */
-
-.review-text {
-
-}
-/* ================ CONTACT-MENU ================  */
-
-.contact-menu {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.contact-text {
-
-}
-
-.links {
-    display: flex;
-}
-
-.link-logo {
-    width: 40px;
-    height: 40px
-}
-
-.map {
-    height: 500px;
-    background-color: #333;
-}
-/* ================ FOOTER ================ */
+/* ================ Footer ================ */
 
 
+
+/* ================ MAP ================ */
 /* Detele copyright panel from ya.Map */
 [class*="copyrights-pane"] {
     display: none !important;
@@ -227,7 +89,12 @@ body {
 
 /* Delete color from ya.Map */
 [class*="ground-pane"] {
-    filter: grayscale(1);
+    filter: grayscale(1) invert(0);
+}
+
+.map {
+    height: 500px;
+    background-color: #333;
 }
 
 @keyframes pulsate-box {

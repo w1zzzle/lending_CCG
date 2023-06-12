@@ -113,3 +113,4 @@ navAdvantagesMenu.addEventListener('click', advantagesMenuScroll);
 navPriceMenu.addEventListener('click', priceMenuScroll);
 navReviewMenu.addEventListener('click', reviewMenuScroll);
 navContactMenu.addEventListener('click', contactMenuScroll);
+

@@ -1,87 +1,161 @@
 <!-- https://rampage-club.com/ -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyber Club Glazov</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-	<header class="header">
-		<nav class="nav">
-			<div class="container">
-				<div class="nav-row">
-					<div class="nav-list">
-						<div class="nav-list__item">
-						
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-
-		<div class="header">
-			<h1 class="header__text"></h1>
-			<img src="" alt="" class="header__background">
-			<img src="" alt="" class="header__logo">
-			<img src="" alt="" class="header__gradient">
-		</div>
-
-	</header>
-
-
-	<main class="section">
-		<div class="container">
-
-			<div class="advantages">
-				<div class="advantages__item"></div>
-			</div>
-
-			<div class="about">
-				<img src="" alt="" class="about-logo">
-				<div class="about-text"></div>
-			</div>
-
-			<div class="price">
-				<div class="price-menu"></div>
-				<div class="price-menu"></div>
-			</div>
-
-			<div class="contacts">
-				<div class="contacts-text"></div>
-				<div class="contacts-map"></div>
-			</div>
-		</div>
-
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__wrapper">
-					<div class="social">
-						<div class="social__wrapper">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</main>
-
-
-
-			<div id="map-test" class="map"></div>
-		</div>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__row">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <ul class="navigation">
+                    <li>О нас</li>
+                    <li>Тарифы</li>
+                    <li>Акции</li>
+                    <li>Магазин</li>
+                    <li>Контакты</li>
+                </ul>
+                <button class="btn__call">Позвонить</button>
+            </div>
         </div>
-	</div>
-    </section>
-    </main>
+    </nav>
 
-    <footer>
-	</footer> 
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1 class="title-1">CYBERCLUB #1</h1>
+                <span class="subtitle-1">Наш компьютерный клуб - это уютное и приятное место для любителей игр.
+                    Специально для вас у нас
+                    представлены конфигурации компьютеров с высокими показателями для комфортной игры.</span>
+                <div class="buttons">
+                    <button class="btn__call">Позвонить</button>
+                    <button class="btn__more">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
-	<script src="./js/main.js"></script>
+    <div class="cards">
+        <div class="container">
+            <div class="cards__wrapper">
+                <div class="card">
+                    <img src="./img/computer.png" alt="computer">
+                    <h2 class="title-2">24 PC</h2>
+                    <span class="subtitle-2">Максимальный FPS во всех играх с высокоскоростным интернетом</span>
+                </div>
+                <div class="card">
+                    <img src="./img/gamepad.png" alt="gamepad">
+                    <h2 class="title-2">PS 5</h2>
+                    <span class="subtitle-2">Актуальная приставка Playstation 5 и Playstation 4</span>
+                </div>
+                <div class="card">
+                    <img src="./img/hotdog.png" alt="hotdog">
+                    <h2 class="title-2">Кухня</h2>
+                    <span class="subtitle-2">Вкусная шаурма и горячие хот-доги</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="container">
+            <div class="slider__wrapper">
+                <img src="./img/arrow-left.png" alt="">
+                <img src="./img/img1.png" alt="">
+                <img src="./img/arrow-right.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="price">
+        <div class="container">
+            <div class="price__wrapper">
+                <h3 class="title-3">Тарифы CyberClub#1</h3>
+                <div class="price__list">
+                    <div class="subtitle-3">ПК</div>
+                    <span class="'subspan-3"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="container">
+            <h3 class="title-3">Новости и акции</h3>
+            <div class="news__wrapper">
+                <div class="news__card">
+                    <img src="./img/img2.png" alt="">
+                    <div class="title-news">Акция</div>
+                    <span class="subtitle-news">Теперь с покупки каждого пакета вы получаете кэшбек в виде баллов,
+                        который
+                        можно потратить как на новые игровые пакеты, так и на товары из магазина.</span>
+                </div>
+                <div class="news__card">
+                    <img src="./img/img3.png" alt="">
+                    <div class="title-news">Новая программа</div>
+                    <span class="subtitle-news">Внимание! Мы переходим на новую программу! Приглашаем всех поучаствовать
+                        сегодня в проверке на тестовом режиме со скидкой 50% на все тарифы.</span>
+                </div>
+                <div class="news__card">
+                    <img src="./img/img4.png" alt="">
+                    <div class="title-news">Турнир по Dota 2</div>
+                    <span class="subtitle-news">Хочешь участвовать? Простая регистрация, без взносов, но с призовым
+                        фондом!Тебе остается только купить пакет «Ночь» в нашем клубе и пройти регистрацию!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts">
+        <div class="container">
+            <h3 class="title-3">Контакты</h3>
+            <div class="contacts__wrapper">
+                <div class="contacts__info">
+                    <div class="address">
+                        <div class="title-address">Удмуртская республика</div>
+                        <div class="subtitle-address">
+                            Глазов, Сибирская улица, 2 <br />
+                            + 7 909 713 5329
+                        </div>
+                    </div>
+                    <div class="workstime">
+                        <div class="title-workstime">Часы работы</div>
+                        <div class="subtitle-workstime">
+                            Каждый день <br />
+                            ВС - ЧТ 11:00 - 23:00<br />
+                            ПТ - СБ 11:00 - 4:00
+                        </div>
+                    </div>
+                </div>
+                <div id="map-test" class="map"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+            </div>
+        </div>
+    </footer>
+    
+    <div id="map-test" class="map"></div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

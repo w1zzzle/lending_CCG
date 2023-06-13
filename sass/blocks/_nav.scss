@@ -1,0 +1,28 @@
+.nav {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2px 36px;
+}
+
+.btn__call {
+    width: 320px;
+    height: 62px;
+    background-color: var(--green);
+}

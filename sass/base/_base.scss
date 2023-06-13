@@ -1,0 +1,23 @@
+:root {
+    // fill
+    --black: #282828;
+    --white: #FFFFFF;
+    --gray: #909090;
+    --green: #61d800;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    // font-family: "Roboto", sans-serif;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ * {
+	border: 1px solid red;
+} 

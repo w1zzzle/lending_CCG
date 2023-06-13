@@ -82,20 +82,7 @@ body {
 
 
 /* ================ MAP ================ */
-/* Detele copyright panel from ya.Map */
-[class*="copyrights-pane"] {
-    display: none !important;
-}
 
-/* Delete color from ya.Map */
-[class*="ground-pane"] {
-    filter: grayscale(1) invert(0);
-}
-
-.map {
-    height: 500px;
-    background-color: #333;
-}
 
 @keyframes pulsate-box {
     

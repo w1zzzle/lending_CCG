@@ -1,4 +1,21 @@
 //==================== Yandex map ====================
+// ADD TO CSS
+
+/* Detele copyright panel from ya.Map */
+// [class*="copyrights-pane"] {
+//     display: none !important;
+// }
+
+// /* Delete color from ya.Map */
+// [class*="ground-pane"] {
+//     filter: grayscale(1) invert(0);
+// }
+
+// .map {
+//     height: 500px;
+//     background-color: #333;
+// }
+
 let center = [58.13957631670024, 52.67546458055673];
 
 function init() {
@@ -65,18 +82,18 @@ document.onscroll = function () {
 }
 
 /* =============== PRICE MENU SLIDER =============== */ 
-let offSet = 0;
-const priceSlider = document.querySelector('.price-box');
+// let offSet = 0;
+// const priceSlider = document.querySelector('.price-box');
 
-document.querySelector('.price-pc').addEventListener('click', function() {
-    offSet = 0;
-    priceSlider.style.left = -offSet + 'px'
-});
+// document.querySelector('.price-pc').addEventListener('click', function() {
+//     offSet = 0;
+//     priceSlider.style.left = -offSet + 'px'
+// });
 
-document.querySelector('.price-kitchen').addEventListener('click', function() {
-    offSet = -1200;
-    priceSlider.style.left = offSet + 'px'
-});
+// document.querySelector('.price-kitchen').addEventListener('click', function() {
+//     offSet = -1200;
+//     priceSlider.style.left = offSet + 'px'
+// });
 /* =============== =============== =============== */ 
 
 var aboutMenu = document.getElementById("about-menu");

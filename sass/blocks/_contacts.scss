@@ -1,0 +1,42 @@
+.contacts {
+}
+.container {
+}
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-3 {
+}
+.contacts__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.address {
+}
+.title-address {
+}
+.subtitle-address {
+}
+.workstime {
+}
+.title-workstime {
+}
+.subtitle-workstime {
+}
+/* Detele copyright panel from ya.Map */
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+/* Delete color from ya.Map */
+[class*="ground-pane"] {
+    filter: grayscale(1) invert(0);
+}
+
+.map {
+    height: 500px;
+    // background-color: #333;
+}

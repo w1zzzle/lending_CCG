@@ -1,3 +1,12 @@
+// * {
+// 	border: 1px solid red;
+// } 
+
+@font-face {
+    font-family: 'NikkyouSans';
+    src: url("../../fonts/NikkyouSans.ttf");
+}
+
 :root {
     // fill
     --black: #282828;
@@ -18,6 +27,3 @@ body {
     margin: 0 auto;
 }
 
- * {
-	border: 1px solid red;
-} 

@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto&display=swap"
         rel="stylesheet">
+        <link
+        rel="stylesheet"
+        type="text/css"
+        href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
 </head>
 
 <body>
@@ -72,14 +77,36 @@
         </div>
     </div>
 
-    <div class="slider">
+    <div class="sliders">
         <div class="container">
             <div class="slider__wrapper">
-                <img src="./img/arrow-left.png" alt="" class="arrow-left">
-                <img src="./img/img-slider1.png" alt="" class="img-slider1">
-                <img src="./img/arrow-right.png" alt="" class="arrow-right">
+                <img src="./img/arrow-left.png" alt="" class="arrow-left" id="arrow-left">
+    
+                <div class="wrapper">
+                    <div class="slider center">
+                        <div class="slider__item">
+                            <img src="./img/img-slider1.png" alt="" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/img-slider1.png" alt="" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/img-slider1.png" alt="" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/img-slider1.png" alt="" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/img-slider1.png" alt="" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/img-slider1.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/arrow-right.png" alt="" class="arrow-right" id="arrow-right">
             </div>
-            <div class="counter">1/4</div>
+            <div class="counter" id="counter"></div>
         </div>
     </div>
 
@@ -91,43 +118,43 @@
                     <div class="price__list">
                         <div class="subtitle-3">ПК</div>
                         <span class="subspan-3">
-                            1 час – 90 ₽ <br/>
+                            1 час – 90 ₽ <br />
                             2 часа – 160 ₽
                         </span>
                     </div>
                     <div class="price__list">
                         <div class="subtitle-3">Пакеты по часам</div>
                         <span class="subspan-3">
-                            Пакет “3” часа” - 230 ₽ <br/>
-                            Пакет “4” часа” - 300 ₽ <br/>
-                            Пакет “5” часов” - 350 ₽ <br/>
-                            Пакет “6” часов” - 400 ₽ <br/>
-                            Пакет “8” часов” - 490 ₽ <br/>
-                            Пакет “12” часов” - 700 ₽ <br/>
+                            Пакет “3” часа” - 230 ₽ <br />
+                            Пакет “4” часа” - 300 ₽ <br />
+                            Пакет “5” часов” - 350 ₽ <br />
+                            Пакет “6” часов” - 400 ₽ <br />
+                            Пакет “8” часов” - 490 ₽ <br />
+                            Пакет “12” часов” - 700 ₽ <br />
                         </span>
                     </div>
                     <div class="price__list">
                         <div class="subtitle-3">Пакеты</div>
                         <span class="subspan-3">
-                            Пакет “Утро Будни 11:00 – 15:00” – 150 ₽ <br/>
-                            Пакет “Утро Выходные 11:00 – 14:00” – 150 ₽ <br/>
-                            Пакет “Ночь 23:00 – 04:00” – 300 ₽ <br/>
+                            Пакет “Утро Будни 11:00 – 15:00” – 150 ₽ <br />
+                            Пакет “Утро Выходные 11:00 – 14:00” – 150 ₽ <br />
+                            Пакет “Ночь 23:00 – 04:00” – 300 ₽ <br />
                         </span>
                     </div>
                     <div class="price__list">
                         <div class="subtitle-3">PS4</div>
                         <span class="subspan-3">
-                            150 ₽/час (1 человек) <br/>
-                            200 ₽/час (2 – 4 человека) <br/>
-                            300 ₽/час (больше 4 человек) <br/>
+                            150 ₽/час (1 человек) <br />
+                            200 ₽/час (2 – 4 человека) <br />
+                            300 ₽/час (больше 4 человек) <br />
                         </span>
                     </div>
                     <div class="price__list">
                         <div class="subtitle-3">PS5</div>
                         <span class="subspan-3">
-                            150 ₽/час (1 человек) <br/>
-                            250 ₽/час (2 – 4 человека) <br/>
-                            350 ₽/час (больше 4 человек) <br/>
+                            150 ₽/час (1 человек) <br />
+                            250 ₽/час (2 – 4 человека) <br />
+                            350 ₽/час (больше 4 человек) <br />
                         </span>
                     </div>
                 </div>
@@ -193,29 +220,29 @@
         <div class="container">
             <div class="connect__wrapper">
                 <div class="connect-us">
-                    Связаться с нами <br/>
+                    Связаться с нами <br />
                     <button class="btn__call">Позвонить</button>
                 </div>
                 <div class="contacts-title">
                     Контакты
-                <div class="contacts-2">
-                    <div class="address-2">
-                        <div class="title-address-2">Адрес</div>
-                        <span class="subtitle-address-2">
-                            Удмуртская республика <br/>
-                            Глазов, Сибирская улица, 2 <br/>
-                            + 7 909 713 5329 <br/>
-                        </span>
-                    </div>
-                    <div class="social-2">
-                        <div class="title-social-2">Соцсети</div>
-                        <div class="subtitle-social-2">
-                            <a href="#" class="vk">В контакте</a>
-                            <a href="#" class="inst">Instagram</a>
+                    <div class="contacts-2">
+                        <div class="address-2">
+                            <div class="title-address-2">Адрес</div>
+                            <span class="subtitle-address-2">
+                                Удмуртская республика <br />
+                                Глазов, Сибирская улица, 2 <br />
+                                + 7 909 713 5329 <br />
+                            </span>
+                        </div>
+                        <div class="social-2">
+                            <div class="title-social-2">Соцсети</div>
+                            <div class="subtitle-social-2">
+                                <a href="#" class="vk">В контакте</a>
+                                <a href="#" class="inst">Instagram</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -226,10 +253,13 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- <div id="map-test" class="map"></div> -->
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

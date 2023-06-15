@@ -55,79 +55,43 @@ function init() {
 }
 ymaps.ready(init);
 
-// window.addEventListener("scroll", e => {
-// let navbar = document.getElementById("navbar").classList
-// let active_class = "navbar_scrolled"
+/* SLIDER */
+const counterElement = document.getElementById("counter");
+const leftArrow = document.getElementById("arrow-left");
+const rightArrow = document.getElementById("arrow-right");
+const sliderItems = document.getElementsByClassName("slider__item");
 
-//      if (pageYOffset > 120)
-//         navbar.add(active_class)
-//     else
-//         navbar.remove(active_class)
-// })
+let currentSlide = 1;
+const totalSlides = sliderItems.length;
 
-let header = document.querySelector('header');
-let headerH = document.querySelector('header').clientHeight;
+function updateCounter() {
+    counterElement.textContent = `${currentSlide}/${totalSlides}`;
+  }
 
-document.onscroll = function () {
-    let scroll = window.scrollY;
+leftArrow.addEventListener("click", function() {
+    currentSlide--;
+    if (currentSlide < 1) currentSlide = totalSlides;
+    updateCounter();
+  });
 
-    if (scroll > headerH) {
-        header.classList.add('fixed');
-        document.body.style.paddingTop = headerH + 'px';
-    }
-    else{
-    header.classList.remove('fixed')
-    document.body.removeAttribute('style')
-    }
-}
+  rightArrow.addEventListener("click", function() {
+    currentSlide++;
+    if (currentSlide > totalSlides) currentSlide = 1;
+    updateCounter();
+  });
 
-/* =============== PRICE MENU SLIDER =============== */ 
-// let offSet = 0;
-// const priceSlider = document.querySelector('.price-box');
+updateCounter();
 
-// document.querySelector('.price-pc').addEventListener('click', function() {
-//     offSet = 0;
-//     priceSlider.style.left = -offSet + 'px'
-// });
+/* Lib - slick */
+$('.center').slick({
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 1,
+    prevArrow: $(".arrow-left"),
+    nextArrow: $(".arrow-right")
+  });
 
-// document.querySelector('.price-kitchen').addEventListener('click', function() {
-//     offSet = -1200;
-//     priceSlider.style.left = offSet + 'px'
-// });
-/* =============== =============== =============== */ 
-
-var aboutMenu = document.getElementById("about-menu");
-var advantagesMenu = document.getElementById("advantages-menu");
-var priceMenu = document.getElementById("price-menu");
-var reviewMenu = document.getElementById("review-menu");
-var contactMenu = document.getElementById("contact-menu");
-
-var navAboutMenu = document.querySelector('.nav-about-menu');
-var navAdvantagesMenu = document.querySelector('.nav-advantages-menu');
-var navPriceMenu = document.querySelector('.nav-price-menu');
-var navReviewMenu  = document.querySelector('.nav-review-menu');
-var navContactMenu = document.querySelector('.nav-contact-menu');
-
-function aboutMenuScroll() {
-    aboutMenu.scrollIntoView({block: "center", behavior: "smooth"});
-}
-function advantagesMenuScroll() {
-    advantagesMenu.scrollIntoView({block: "center", behavior: "smooth"});
-}
-function priceMenuScroll() {
-    priceMenu.scrollIntoView({block: "center", behavior: "smooth"});
-}
-function reviewMenuScroll() {
-    reviewMenu.scrollIntoView({block: "center", behavior: "smooth"});
-}
-function contactMenuScroll() {
-    contactMenu.scrollIntoView({block: "center", behavior: "smooth"});
-}
+// ===================================
 
 
-navAboutMenu.addEventListener('click', aboutMenuScroll);
-navAdvantagesMenu.addEventListener('click', advantagesMenuScroll);
-navPriceMenu.addEventListener('click', priceMenuScroll);
-navReviewMenu.addEventListener('click', reviewMenuScroll);
-navContactMenu.addEventListener('click', contactMenuScroll);
 

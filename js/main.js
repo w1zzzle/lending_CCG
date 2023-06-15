@@ -1,21 +1,4 @@
 //==================== Yandex map ====================
-// ADD TO CSS
-
-/* Detele copyright panel from ya.Map */
-// [class*="copyrights-pane"] {
-//     display: none !important;
-// }
-
-// /* Delete color from ya.Map */
-// [class*="ground-pane"] {
-//     filter: grayscale(1) invert(0);
-// }
-
-// .map {
-//     height: 500px;
-//     background-color: #333;
-// }
-
 let center = [58.13957631670024, 52.67546458055673];
 
 function init() {

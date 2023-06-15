@@ -137,6 +137,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--black);
+  overflow-x: hidden;
 }
 
 .container {
@@ -350,7 +351,7 @@ body {
 }
 
 .contacts {
-  padding-top: 150px;
+  padding-top: 353px;
 }
 
 .contacts__wrapper {
@@ -360,7 +361,6 @@ body {
 }
 
 .contacts__title-3 {
-  padding-top: 405px;
   font-family: "Inter";
   font-weight: 600;
   font-size: 40px;
@@ -388,14 +388,14 @@ body {
   line-height: 1.3;
 }
 
-.workstime {
+.title-workstime {
   font-family: "Inter";
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
 }
 
-.title-workstime {
+.subtitle-workstime {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
@@ -413,8 +413,27 @@ body {
 }
 
 .map {
-  height: 500px;
+  margin-left: auto;
+  width: 800px;
+  height: 680px;
   background-color: #333;
+}
+
+.footer {
+  padding-top: 27px;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.politic {
+  padding-right: 18px;
+}
+
+.copyright {
+  text-align: right;
 }
 
 .prices {
@@ -455,14 +474,26 @@ body {
   line-height: 1.3;
 }
 
+.connect {
+  padding-top: 150px;
+}
+
 .connect__wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 80px;
+}
+
+.btn__call {
+  margin-top: 50px;
+  margin-right: 280px;
 }
 
 .contacts-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 64px;
 }
 
 .subtitle-social-2 {

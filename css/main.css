@@ -121,7 +121,7 @@ legend {
 
 @font-face {
   font-family: "NikkyouSans";
-  src: url("../../fonts/NikkyouSans.ttf");
+  src: url(../../fonts/NikkyouSans.ttf);
 }
 :root {
   --black: #282828;
@@ -266,7 +266,6 @@ body {
 
 .slider .slider__item img {
   cursor: grab;
-  border: 1px solid #fff;
 }
 
 .slider .slider__item .slick-center {
@@ -296,7 +295,7 @@ body {
   width: 40px;
   height: 16px;
   margin: auto;
-  margin-right: 10px;
+  margin-right: 100px;
   z-index: 1;
   cursor: pointer;
 }
@@ -305,7 +304,7 @@ body {
   width: 40px;
   height: 16px;
   margin: auto;
-  margin-left: 10px;
+  margin-left: 100px;
   z-index: 1;
   cursor: pointer;
 }

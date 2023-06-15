@@ -85,7 +85,7 @@ updateCounter();
 /* Lib - slick */
 $('.center').slick({
     centerMode: true,
-    centerPadding: '10px',
+    centerPadding: '60px',
     slidesToShow: 1,
     prevArrow: $(".arrow-left"),
     nextArrow: $(".arrow-right")

@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'NikkyouSans';
-    src: url(../../fonts/NikkyouSans.ttf);
+    src: url('../../fonts/NikkyouSans.ttf');
 }
 
 :root {
@@ -20,7 +20,7 @@ body {
     // font-family: "Roboto", sans-serif;
     color: var(--white);
 
-    background-image: url(../../img/background.png);
+    background-image: url('../../img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
 

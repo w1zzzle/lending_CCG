@@ -121,7 +121,7 @@ legend {
 
 @font-face {
   font-family: "NikkyouSans";
-  src: url(../../fonts/NikkyouSans.ttf);
+  src: url('../../fonts/NikkyouSans.ttf');
 }
 :root {
   --black: #282828;
@@ -133,7 +133,7 @@ legend {
 body {
   font-family: "Inter", sans-serif;
   color: var(--white);
-  background-image: url(../../img/background.png);
+  background-image: url('../../img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--black);

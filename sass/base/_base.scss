@@ -19,6 +19,11 @@ body {
     font-family: "Inter", sans-serif;
     // font-family: "Roboto", sans-serif;
     color: var(--white);
+
+    background-image: url(../../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     background-color: var(--black);
 }
 

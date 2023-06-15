@@ -7,6 +7,28 @@
     justify-content: center;
 }
 
+.arrow-left {
+    width: 40px;
+    height: 16px;
+
+    margin: auto;
+    margin-right: 100px;
+
+    cursor: pointer;
+
+}
+
+.arrow-right {
+    width: 40px;
+    height: 16px;
+
+    margin: auto;
+    margin-left: 100px;
+
+    cursor: pointer;
+}
+
 .counter {
+    padding-top: 20px;
     text-align: center;
 }

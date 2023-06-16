@@ -40,11 +40,26 @@ a {
     margin: 0 auto;
 }
 
-.btn__call, .btn__more {
+.btn__call {
     width: 320px;
     height: 62px;
     background-color: $green;
     transition: all ease 0.3s;
+
+
+    &:hover{
+        border: $border;
+        background-color: transparent;
+    }
+}
+
+.btn__more {
+    width: 320px;
+    height: 62px;
+    background-color: transparent;
+    transition: all ease 0.3s;
+
+    border: $border-line;
 
 
     &:hover{

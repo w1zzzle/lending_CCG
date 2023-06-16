@@ -150,13 +150,25 @@ a:active {
   margin: 0 auto;
 }
 
-.btn__call, .btn__more {
+.btn__call {
   width: 320px;
   height: 62px;
   background-color: #61d800;
   transition: all ease 0.3s;
 }
-.btn__call:hover, .btn__more:hover {
+.btn__call:hover {
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+}
+
+.btn__more {
+  width: 320px;
+  height: 62px;
+  background-color: transparent;
+  transition: all ease 0.3s;
+  border: 1px solid #909090;
+}
+.btn__more:hover {
   border: 1px solid #FFFFFF;
   background-color: transparent;
 }
@@ -165,7 +177,6 @@ a:active {
   padding: 50px 200px 50px 200px;
   position: sticky;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.24);
   z-index: 11;
 }
 .nav .nav__row {
@@ -457,4 +468,4 @@ a:active {
 .connect .btn__call {
   margin-top: 50px;
   margin-right: 280px;
-}
+}/*# sourceMappingURL=main.css.map */

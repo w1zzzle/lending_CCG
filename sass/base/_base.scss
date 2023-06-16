@@ -7,26 +7,24 @@
     src: url('../fonts/NikkyouSans.ttf');
 }
 
-:root {
-    // fill
-    --black: #282828;
-    --white: #FFFFFF;
-    --gray: #909090;
-    --green: #61d800;
-}
-
 body {
     font-family: "Inter", sans-serif;
-    // font-family: "Roboto", sans-serif;
-    color: var(--white);
+    color: $white;
 
     background-image: url('../img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-color: var(--black);
+    background-color: $black;
 
     overflow-x: hidden
+}
+
+a {
+    &:hover {
+        color: $green;
+        text-decoration: underline;
+    }
 }
 
 .container {
@@ -34,3 +32,24 @@ body {
     margin: 0 auto;
 }
 
+.btn__call, .btn__more {
+    width: 320px;
+    height: 62px;
+    background-color: $green;
+
+    &:hover{
+        border: $border;
+        background-color: transparent;
+    }
+}
+
+// .btn__more {
+//     width: 320px;
+//     height: 62px;
+//     background-color: $green;
+
+//     &:hover {
+//         border: $border;
+//         background-color: transparent;
+//     }
+// }

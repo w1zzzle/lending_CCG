@@ -1,69 +1,78 @@
 .contacts {
     padding-top: 353px;
-}
 
-.contacts__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contacts__title-3 {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1.1;
-}
-.contacts__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 80px;
-}
-.address {
+    .contacts__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     
+    .contacts__title-3 {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    
+    .contacts__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 80px;
+    }
+    
+    .address {
+        
+    }
+    
+    .title-address {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    
+    .subtitle-address {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    
+    .workstime {
+    
+    }
+    
+    .title-workstime {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.3;
+    
+    }
+    
+    .subtitle-workstime {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    
+    /* Detele copyright panel from ya.Map */
+    [class*="copyrights-pane"] {
+        display: none !important;
+    }
+    
+    /* Delete color from ya.Map */
+    [class*="ground-pane"] {
+        filter: grayscale(1) invert(0);
+    }
+    
+    .map {
+        margin-left: auto;
+    
+        width: 800px;
+        height: 680px; 
+    }
 }
-.title-address {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.3;
-}
-.subtitle-address {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.3;
-}
-.workstime {
 
-}
-.title-workstime {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.3;
-
-}
-.subtitle-workstime {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.3;
-}
-/* Detele copyright panel from ya.Map */
-[class*="copyrights-pane"] {
-    display: none !important;
-}
-
-/* Delete color from ya.Map */
-[class*="ground-pane"] {
-    filter: grayscale(1) invert(0);
-}
-
-.map {
-    margin-left: auto;
-
-    width: 800px; //800
-    height: 680px; //680
-    background-color: #333;
-}

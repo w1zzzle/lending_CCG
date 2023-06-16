@@ -1,80 +1,75 @@
 .sliders {
     padding-top: 150px;
-}
 
-.slider__wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.slider {
-    position: relative;
-}
-
-.slider .slider__item {
-    display: block;
-    opacity: 0.4;
-    text-align: center;
-    transition: 0.2s;
-    margin: 0 15px;
-}
-
-.slider .slider__item img {
-    cursor: grab;
-    // border: 1px solid #fff;
-}
-
-.slider .slider__item .slick-center {
-    opacity: 1;
-}
-
-.slider .slick-arrow {
-    position: absolute;
-    cursor: pointer;
-    padding: 3px 10px;
-    bottom: -50px;
-}
-
-.slick-slide img {
-    display: initial !important;
-}
-
-.slick-list {
-    overflow: visible !important;
-}
-
-.slick-center {
-    opacity: 1 !important;
-}
-
-.arrow-left  {
-    width: 40px;
-    height: 16px;
-
-    margin: auto;
-    margin-right: 100px;
-    z-index: 1;
-
-    cursor: pointer;
-}
-
-.arrow-right {
-    width: 40px;
-    height: 16px;
-
-    margin: auto;
-    margin-left: 100px;
-    z-index: 1;
-
-    cursor: pointer;
-}
-
-.counter {
-    padding-top: 20px;
-    text-align: center;
+    .slider__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .slider {
+        position: relative;
+    }
+    
+    .slider .slider__item {
+        display: block;
+        opacity: 0.4;
+        text-align: center;
+        transition: 0.2s;
+        margin: 0 15px;
+    }
+    
+    .slider .slider__item img {
+        cursor: grab;
+        // border: 1px solid #fff;
+    }
+    
+    .slider .slider__item .slick-center {
+        opacity: 1;
+    }
+    
+    .slider .slick-arrow {
+        position: absolute;
+        cursor: pointer;
+        padding: 3px 10px;
+        bottom: -50px;
+    }
+    
+    .slick-slide img {
+        display: initial !important;
+    }
+    
+    .slick-list {
+        overflow: visible !important;
+    }
+    
+    .slick-center {
+        opacity: 1 !important;
+    }
+    
+    .arrow-left, .arrow-right  {
+        width: 80px;
+        height: 25px;
+    
+        margin: auto;
+        margin-right: 100px;
+        z-index: 1;
+        // background: red;
+    
+        cursor: pointer;
+        filter: brightness(10);
+        
+        &:hover {
+            filter: brightness(0.7);
+        }
+    }
+    
+    .counter {
+        padding-top: 20px;
+        text-align: center;
+    }
 }

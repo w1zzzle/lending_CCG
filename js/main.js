@@ -51,6 +51,7 @@ function updateCounter() {
     counterElement.textContent = `${currentSlide}/${totalSlides}`;
   }
 
+// Счетчик по стрелкам
 leftArrow.addEventListener("click", function() {
     currentSlide--;
     if (currentSlide < 1) currentSlide = totalSlides;
@@ -61,6 +62,24 @@ leftArrow.addEventListener("click", function() {
     currentSlide++;
     if (currentSlide > totalSlides) currentSlide = 1;
     updateCounter();
+  });
+
+  // Счетчик при помощи перетаскивания мышкой
+  $('.center').on('mousedown', function() {
+    // Установить флаг, что началось перетаскивание слайдера
+    isDragging = true;
+  });
+  
+  // Обработчик события "mouseup"
+  $('.center').on('mouseup', function() {
+    // Если перетаскивание слайдера было завершено
+    if (isDragging) {
+      // Обновить текущий слайд и счетчик
+      currentSlide = $('.center').slick('slickCurrentSlide') + 1;
+      updateCounter();
+      // Сбросить флаг перетаскивания
+      isDragging = false;
+    }
   });
 
 updateCounter();
@@ -77,4 +96,35 @@ $('.center').slick({
 // ===================================
 
 
+// Находим все ссылки в навигационном меню
+const menuLinks = document.querySelectorAll('ul li a');
+
+// Обходим каждую ссылку и добавляем обработчик события "click"
+menuLinks.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
+
+// Функция, вызываемая при нажатии на ссылку
+function scrollToSection(event) {
+  // Отменяем стандартное поведение ссылки
+  event.preventDefault();
+
+  // Получаем атрибут href ссылки
+  const targetId = this.getAttribute('href');
+
+  // Находим целевой блок для прокрутки
+  const targetElement = document.querySelector(targetId);
+
+  // Проверяем, существует ли целевой блок
+  if (targetElement) {
+    // Вычисляем позицию целевого блока относительно верхней границы страницы
+    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+    // Прокручиваем страницу к целевому блоку
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth' // Добавляем плавную прокрутку
+    });
+  }
+}
 

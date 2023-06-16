@@ -2,29 +2,34 @@
     padding-top: 50px;
     padding-left: 200px;
     padding-right: 200px;
+
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 11;
+
+    .nav__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 59px;
+        height: 59px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 2px 36px;
+    }
 }
 
-.nav__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.logo {
-    width: 59px;
-    height: 59px;
 
-}
 
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    gap: 2px 36px;
-}
 
-.btn__call {
-    width: 320px;
-    height: 62px;
-    background-color: var(--green);
-}
+
+

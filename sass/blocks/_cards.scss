@@ -1,38 +1,38 @@
 .cards {
 
+    .cards__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+    
+        padding-top: 160px;
+        gap: 60px;
+    }
+    .card {
+    
+        img {
+            padding-bottom: 18px;
+        }
+    
+    }
+    
+    .title-2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 64px;
+        line-height: 1.1;
+    
+        padding-top: 26px;
+        border-top: $border-line;
+    }
+    
+    .subtitle-2 {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
 }
 
-.cards__wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-
-    padding-top: 160px;
-    gap: 60px;
-}
-.card {
-
-}
-.card img {
-
-    padding-bottom: 18px;
-}
-
-.title-2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 64px;
-    line-height: 1.1;
-
-    padding-top: 26px;
-    border-top: 1px solid var(--gray);
-
-}
-
-.subtitle-2 {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
-}

@@ -1,6 +1,6 @@
 .sliders {
     padding-top: 150px;
-
+    
     .slider__wrapper {
         display: flex;
         justify-content: center;
@@ -9,10 +9,12 @@
     .wrapper {
         max-width: 1400px;
         margin: 0 auto;
+
     }
-    
+
     .slider {
         position: relative;
+
     }
     
     .slider .slider__item {

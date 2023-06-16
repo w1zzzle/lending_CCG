@@ -91,7 +91,16 @@ $('.center').slick({
     centerPadding: '60px',
     slidesToShow: 1,
     prevArrow: $(".arrow-left"),
-    nextArrow: $(".arrow-right")
+    nextArrow: $(".arrow-right"),
+    lazyLoad: 'ondemand',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
 // ===================================

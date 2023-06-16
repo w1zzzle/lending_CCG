@@ -21,6 +21,7 @@ function init() {
     }, {
         iconLayout: "default#image",
         iconImageHref: "https://cdn-icons-png.flaticon.com/512/2776/2776067.png",
+        // iconImageHref: "./img/mark.png",
         iconImageSize: [50, 50],
         iconImageOffset: [-19, -44],
     }

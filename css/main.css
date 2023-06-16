@@ -133,9 +133,16 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  transition: all ease 0.3s;
+}
 a:hover {
   color: #61d800;
   text-decoration: underline;
+}
+a:active {
+  position: relative;
+  top: 2px;
 }
 
 .container {
@@ -147,6 +154,7 @@ a:hover {
   width: 320px;
   height: 62px;
   background-color: #61d800;
+  transition: all ease 0.3s;
 }
 .btn__call:hover, .btn__more:hover {
   border: 1px solid #FFFFFF;
@@ -251,6 +259,10 @@ a:hover {
 }
 .sliders .slider .slider__item img {
   cursor: grab;
+  transition: all ease 0.3s;
+}
+.sliders .slider .slider__item img:hover {
+  transform: scale(1.05);
 }
 .sliders .slider .slider__item .slick-center {
   opacity: 1;

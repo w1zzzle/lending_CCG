@@ -21,10 +21,18 @@ body {
 }
 
 a {
+    transition: all ease 0.3s;
+
     &:hover {
         color: $green;
         text-decoration: underline;
     }
+
+    &:active {
+        position: relative;
+        top: 2px;
+    }
+
 }
 
 .container {
@@ -36,20 +44,11 @@ a {
     width: 320px;
     height: 62px;
     background-color: $green;
+    transition: all ease 0.3s;
+
 
     &:hover{
         border: $border;
         background-color: transparent;
     }
 }
-
-// .btn__more {
-//     width: 320px;
-//     height: 62px;
-//     background-color: $green;
-
-//     &:hover {
-//         border: $border;
-//         background-color: transparent;
-//     }
-// }

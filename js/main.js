@@ -98,7 +98,7 @@ $('.center').slick({
 
 
 // Находим все ссылки в навигационном меню
-const menuLinks = document.querySelectorAll('ul li a');
+const menuLinks = document.querySelectorAll('ul li a[href^="#"]');
 
 // Обходим каждую ссылку и добавляем обработчик события "click"
 menuLinks.forEach(link => {

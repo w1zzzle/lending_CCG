@@ -25,6 +25,11 @@
     
     .slider .slider__item img {
         cursor: grab;
+        transition: all ease 0.3s;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
         // border: 1px solid #fff;
     }
     

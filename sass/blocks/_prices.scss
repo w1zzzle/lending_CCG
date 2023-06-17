@@ -1,9 +1,9 @@
 .prices {
-    padding-top: 150px;
+    margin-top: 150px;
 
     .price__wrapper {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1.5fr;
     }
     .title-3 {
         font-family: 'Inter';
@@ -22,7 +22,7 @@
     
         border-top: $border-line;
         // border-bottom: $border-line;
-        padding: 25px 25px;
+        padding: 25px 0px;
 
         &:last-child {
             border-bottom: $border-line;

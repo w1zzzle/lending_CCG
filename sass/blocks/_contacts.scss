@@ -2,9 +2,8 @@
     padding-top: 353px;
 
     .contacts__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
     }
     
     .contacts__title-3 {
@@ -12,17 +11,16 @@
         font-weight: 600;
         font-size: 40px;
         line-height: 1.1;
+
+        margin-top: 150px;
     }
     
     .contacts__info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-right: 160px;
         gap: 80px;
     }
     
     .address {
-        
     }
     
     .title-address {
@@ -30,6 +28,8 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 1.3;
+
+        margin-top: 49px;
     }
     
     .subtitle-address {
@@ -49,6 +49,7 @@
         font-size: 18px;
         line-height: 1.3;
     
+        margin-top: 49px;
     }
     
     .subtitle-workstime {
@@ -71,7 +72,7 @@
     .map {
         margin-left: auto;
     
-        width: 800px;
+        width: 980px;
         height: 680px; 
     }
 }

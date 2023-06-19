@@ -6,10 +6,7 @@
         grid-template-columns: 1fr 1.5fr;
     }
     .title-3 {
-        font-family: 'Inter';
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 1.2;
+        @include headline-3;
     }
     
     .price__blocks{

@@ -173,7 +173,7 @@ a:active {
   background-color: transparent;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 375px) {
   .btn__call,
   .btn__more {
     width: 160px;
@@ -202,7 +202,7 @@ a:active {
   gap: 36px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 375px) {
   .nav {
     padding: 0px;
   }
@@ -239,7 +239,7 @@ a:active {
   padding-top: 40px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 375px) {
   .header .header__wrapper {
     margin-top: 50px;
   }
@@ -276,7 +276,7 @@ a:active {
   line-height: 1.4;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 375px) {
   .cards .cards__wrapper {
     display: block;
   }
@@ -467,6 +467,7 @@ a:active {
 }
 .prices .title-3 {
   font-family: "Inter";
+  font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
@@ -513,4 +514,4 @@ a:active {
 .connect .btn__call {
   margin-top: 50px;
   margin-right: 280px;
-}
+}/*# sourceMappingURL=main.css.map */

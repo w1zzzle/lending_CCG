@@ -67,3 +67,14 @@ a {
         background-color: transparent;
     }
 }
+
+
+@media (max-width: $media_sm) {
+
+    .btn__call, 
+    .btn__more {
+        width: 160px;
+        height: 42px;
+    }
+    
+}

@@ -27,7 +27,32 @@
         // margin-left: 302px;
         // margin-right: 41px;
     }
+
 }
+
+
+@media (max-width: $media_sm) {
+
+    .nav {
+        padding: 0px;
+
+        .nav__row {
+
+        }
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        ul {
+            display: block;
+        }
+    
+    }
+
+}
+
+
 
 
 

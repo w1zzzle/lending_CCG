@@ -36,3 +36,27 @@
 
 }
 
+@media (max-width: $media_sm) {
+
+    .cards {
+
+        .cards__wrapper {
+            display: block;
+        }
+
+        .card {
+            position: relative;
+            left: 25%;
+            margin-right: 50%;
+
+            img {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+    }
+
+}
+

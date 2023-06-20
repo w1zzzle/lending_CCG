@@ -175,8 +175,13 @@ overlay.addEventListener('click', () => {
     gamesMenuPopup.classList.remove('show');
     overlay.classList.remove('show');
 });
-/* ================================================================================ */
+// ================================================================================ //
 
+
+
+
+
+/* ==================== PARALLAX EFFECT HEADER-BACKGROUND  ==================== */
 const header = document.getElementById('header');
 const background = document.querySelector('.header__background');
 
@@ -190,3 +195,4 @@ window.addEventListener('mousemove', function(e) {
 header.addEventListener('mouseleave', function() {
   background.style.transform = 'translate(0, 0)';
 });
+// ================================================================================ //

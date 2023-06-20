@@ -54,7 +54,7 @@ let currentSlide = 1;
 const totalSlides = sliderItems.length;
 
 function updateCounter() {
-    counterElement.textContent = `${currentSlide}/${totalSlides}`;
+    counterElement.textContent = `${currentSlide} / ${totalSlides}`;
   }
 
 // Счетчик по стрелкам

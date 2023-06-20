@@ -14,19 +14,24 @@
         padding-top: 40px;
     }
     .news__card {
-    
+        img {
+            width: 360px;
+            height: 400px;
+        }
     }
     
     .title-news {
         @include headline-3;
         color: $gray;
 
-        padding-top: 20px;
+        margin-top: 20px;
+
+
     }
     
     .subtitle-news {
         @include text;
-        padding-top: 10px;
+        margin-top: 10px;
     }
 }
 

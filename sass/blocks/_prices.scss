@@ -3,9 +3,9 @@
 
     .price__wrapper {
         display: grid;
-        grid-template-columns: 1fr 1.5fr;
+        grid-template-columns: 35% 65%;
     }
-    .title-3 {
+    .price__title {
         @include headline-3;
     }
     
@@ -15,7 +15,7 @@
     
     .price__list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 45% 55%;
     
         border-top: $border-line;
         // border-bottom: $border-line;
@@ -26,12 +26,13 @@
         }
     }
 
-    .subtitle-3 {
+    .price__subtitle {
         @include headline-4;
     }
     
-    .subspan-3 {
+    .price__description {
         @include text;
+        line-height: 1.6;
         color: $gray;
     }
 }

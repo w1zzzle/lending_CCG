@@ -202,6 +202,18 @@ a:active {
   width: 59px;
   height: 59px;
   margin-right: 255px;
+  transition: transform 0.3s ease;
+}
+.nav .logo:hover img {
+  animation: spin 1s 1 ease-out;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .nav ul {
   font-family: "Inter";

@@ -1,4 +1,4 @@
-//==================== Yandex map ====================
+// ==================== Yandex map ==================== //
 let center = [58.13957631670024, 52.67546458055673];
 
 function init() {
@@ -38,8 +38,13 @@ function init() {
     map.geoObjects.add(placemark); // вставляем метку
 }
 ymaps.ready(init);
+// ================================================================================ //
 
-/* SLIDER */
+
+
+
+
+/* ==================== SLIDER ==================== */
 const counterElement = document.getElementById("counter");
 const leftArrow = document.getElementById("arrow-left");
 const rightArrow = document.getElementById("arrow-right");
@@ -103,8 +108,13 @@ $('.center').slick({
     ]
   });
 
-// ===================================
+// ================================================================================ //
 
+
+
+
+
+/* ==================== Navigation SCROLL ==================== */
 
 // Находим все ссылки в навигационном меню
 const menuLinks = document.querySelectorAll('ul li a[href^="#"]');
@@ -137,7 +147,13 @@ function scrollToSection(event) {
     });
   }
 }
+// ================================================================================ //
 
+
+
+
+
+/* ==================== POPUP's  ==================== */
 const foodMenuButton = document.querySelector('.btn__food');
 const gamesMenuButton = document.querySelector('.btn__games');
 const foodMenuPopup = document.getElementById('foodMenuPopup');
@@ -159,4 +175,18 @@ overlay.addEventListener('click', () => {
     gamesMenuPopup.classList.remove('show');
     overlay.classList.remove('show');
 });
+/* ================================================================================ */
 
+const header = document.getElementById('header');
+const background = document.querySelector('.header__background');
+
+window.addEventListener('mousemove', function(e) {
+  let x = e.clientX / window.innerWidth;
+  let y = e.clientY / window.innerHeight;
+
+  background.style.transform = `translate(-${x * 50}px, -${y * 10}px`
+});
+
+header.addEventListener('mouseleave', function() {
+  background.style.transform = 'translate(0, 0)';
+});

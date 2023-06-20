@@ -19,16 +19,17 @@
 
         &:hover img {
             animation: spin 1s 1 ease-out;
-          }
-          
-          @keyframes spin {
+        }
+
+        @keyframes spin {
             0% {
-              transform: rotate(0deg);
+                transform: rotate(0deg);
             }
+
             100% {
-              transform: rotate(360deg);
+                transform: rotate(360deg);
             }
-          }
+        }
     }
 
     ul {
@@ -39,7 +40,7 @@
         text-align: center;
 
         li {
-        padding-left: 36px;
+            padding-left: 36px;
 
             &:last-child {
                 padding-right: 41px;
@@ -55,26 +56,14 @@
     .nav {
         padding: 0px;
 
-        .nav__row {
+        .nav__row {}
 
-        }
-
-        .logo {
-        }
+        .logo {}
 
         ul {
             display: block;
         }
-    
+
     }
 
 }
-
-
-
-
-
-
-
-
-

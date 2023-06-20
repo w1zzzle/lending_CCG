@@ -27,17 +27,11 @@
     }
 
     .subtitle-3 {
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.3;
+        @include headline-4;
     }
     
     .subspan-3 {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.3;
+        @include text;
+        color: $gray;
     }
 }
-

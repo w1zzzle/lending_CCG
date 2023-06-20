@@ -27,9 +27,11 @@
                 <div class="logo">
                     <img src="./img/logo.png" alt="logo">
                 </div>
+
                 <div class="nav__burger">
                     <span></span>
                 </div>
+
                 <ul>
                     <li><a href="#header">О нас</a></li>
                     <li><a href="#prices">Тарифы</a></li>
@@ -43,6 +45,8 @@
     </nav>
 
     <header class="header" id="header">
+        <!-- <img src="./img/header-background.png" alt="" class="header__background"> -->
+        <div class="header__background"></div>
         <div class="container">
             <div class="header__wrapper">
                 <h1 class="title-1">CYBERCLUB #1</h1>
@@ -164,6 +168,22 @@
         </div>
     </div>
 
+    <div class="container">
+            <div class="buttons_menu">
+                <button class="btn__food btn__call">Меню еды</button>
+                <button class="btn__games btn__call">Меню игр</button>
+        </div>
+    </div>
+
+    <div id="foodMenuPopup" class="popup">
+        <img src="./img/menu-food.png" alt="menu-food">
+    </div>
+
+    <div id="gamesMenuPopup" class="popup">
+        <img src="./img/menu-food.png" alt="menu-food">
+    </div>
+    <div id="overlay" class="overlay"></div>
+
     <div class="news" id="news">
         <div class="container">
             <h3 class="title-3">Новости и акции</h3>
@@ -197,7 +217,7 @@
                 <div class="contacts__info">
                 <h3 class="contacts__title-3">Контакты</h3>
                     <div class="address">
-                        <div class="title-address">Удмуртская республика</div>
+                        <div class="title-address">Адрес</div>
                         <div class="subtitle-address">
                             Глазов <br />
                             Сибирская улица, 2

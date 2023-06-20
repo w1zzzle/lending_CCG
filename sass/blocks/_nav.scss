@@ -1,6 +1,5 @@
 .nav {
     padding: 50px 200px 0px 200px;
-
     // position: sticky;
     top: 0;
     z-index: 11;
@@ -15,17 +14,23 @@
         width: 59px;
         height: 59px;
 
-        margin-right: 302px;
+        margin-right: 255px;
     }
 
     ul {
+        @include link-title;
+
         display: flex;
         justify-content: space-between;
         text-align: center;
-        gap: 36px;
 
-        // margin-left: 302px;
-        // margin-right: 41px;
+        li {
+        padding-left: 36px;
+
+            &:last-child {
+                padding-right: 41px;
+            }
+        }
     }
 
 }
@@ -41,7 +46,6 @@
         }
 
         .logo {
-            margin-right: 10px;
         }
 
         ul {

@@ -3,31 +3,42 @@
 
     .connect__wrapper {
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 35% 65%;
         border-bottom: $border-line;
-        padding-bottom: 80px;
+        padding-bottom: 120px;
     
     }
     .connect-us {
-    
+        @include headline-3;
+    }
+
+    .contacts-title {
+        @include headline-3;
     }
     
     .contacts-2 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.2fr 1fr;
         margin-top: 64px;
     }
     .address-2 {
     }
     .title-address-2 {
+        @include headline-4;
     }
     .subtitle-address-2 {
+        @include text;
+        color: $gray;
     }
     .social-2 {
     }
     .title-social-2 {
+        @include headline-4;
     }
     .subtitle-social-2 {
+        @include text;
+        color: $gray;
+
         display: inline-grid;
     }
     .vk {

@@ -150,6 +150,14 @@ a:active {
   margin: 0 auto;
 }
 
+.btn__call,
+.btn__more {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
 .btn__call {
   width: 320px;
   height: 62px;
@@ -193,21 +201,27 @@ a:active {
 .nav .logo {
   width: 59px;
   height: 59px;
-  margin-right: 302px;
+  margin-right: 255px;
 }
 .nav ul {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  gap: 36px;
+}
+.nav ul li {
+  padding-left: 36px;
+}
+.nav ul li:last-child {
+  padding-right: 41px;
 }
 
 @media (max-width: 375px) {
   .nav {
     padding: 0px;
-  }
-  .nav .logo {
-    margin-right: 10px;
   }
   .nav ul {
     display: block;
@@ -219,19 +233,31 @@ a:active {
   align-items: center;
   margin-top: 200px;
 }
+.header .header__background {
+  background-image: url("../img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+  top: 0;
+  width: 1920px;
+  height: 100vh;
+}
 .header .title-1 {
   font-family: "NikkyouSans";
-  font-size: 128px;
   font-weight: 400;
-  line-height: 1.3;
+  font-size: 128px;
+  line-height: 1.4;
 }
 .header .subtitle-1 {
-  margin-top: 32px;
-  text-align: center;
-  width: 385px;
+  font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  margin-top: 32px;
+  text-align: center;
+  width: 385px;
 }
 .header .buttons {
   display: flex;
@@ -250,11 +276,13 @@ a:active {
     font-size: 12px;
   }
 }
+.cards {
+  margin-top: 359px;
+}
 .cards .cards__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
-  margin-top: 209px;
   gap: 60px;
 }
 .cards .card img {
@@ -262,18 +290,18 @@ a:active {
 }
 .cards .title-2 {
   font-family: "Inter";
-  font-style: normal;
   font-weight: 300;
   font-size: 64px;
   line-height: 1.1;
-  padding-top: 26px;
   border-top: 1px solid #909090;
+  padding-top: 26px;
 }
 .cards .subtitle-2 {
   font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
+  color: #909090;
 }
 
 @media (max-width: 375px) {
@@ -350,12 +378,16 @@ a:active {
   filter: brightness(0.7);
 }
 .sliders .counter {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
   padding-top: 20px;
   text-align: center;
 }
 
 .news {
-  padding-top: 150px;
+  margin-top: 150px;
 }
 .news .title-3 {
   font-family: "Inter";
@@ -368,25 +400,26 @@ a:active {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 .news .title-news {
-  padding-top: 20px;
   font-family: "Inter";
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
+  color: #909090;
+  padding-top: 20px;
 }
 .news .subtitle-news {
-  padding-top: 10px;
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  padding-top: 10px;
 }
 
 .contacts {
-  padding-top: 353px;
+  padding-top: 150px;
   /* Detele copyright panel from ya.Map */
   /* Delete color from ya.Map */
 }
@@ -402,7 +435,7 @@ a:active {
   margin-top: 150px;
 }
 .contacts .contacts__info {
-  margin-right: 160px;
+  margin-right: 226px;
   gap: 80px;
 }
 .contacts .title-address {
@@ -410,26 +443,28 @@ a:active {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
-  margin-top: 49px;
+  margin-top: 40px;
 }
 .contacts .subtitle-address {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  margin-top: 16px;
 }
 .contacts .title-workstime {
   font-family: "Inter";
   font-weight: 600;
   font-size: 18px;
   line-height: 1.3;
-  margin-top: 49px;
+  margin-top: 32px;
 }
 .contacts .subtitle-workstime {
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  margin-top: 16px;
 }
 .contacts [class*=copyrights-pane] {
   display: none !important;
@@ -444,6 +479,11 @@ a:active {
 }
 
 .footer {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #909090;
   margin-top: 27px;
   margin-bottom: 150px;
 }
@@ -453,6 +493,10 @@ a:active {
 }
 .footer .politic {
   padding-right: 18px;
+  cursor: pointer;
+}
+.footer .site-map {
+  cursor: pointer;
 }
 .footer .copyright {
   text-align: right;
@@ -467,7 +511,6 @@ a:active {
 }
 .prices .title-3 {
   font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
@@ -492,6 +535,7 @@ a:active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  color: #909090;
 }
 
 .connect {
@@ -499,19 +543,99 @@ a:active {
 }
 .connect .connect__wrapper {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 35% 65%;
   border-bottom: 1px solid #909090;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
+}
+.connect .connect-us {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.connect .contacts-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
 }
 .connect .contacts-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   margin-top: 64px;
 }
+.connect .title-address-2 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.connect .subtitle-address-2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #909090;
+}
+.connect .title-social-2 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+}
 .connect .subtitle-social-2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #909090;
   display: inline-grid;
 }
 .connect .btn__call {
   margin-top: 50px;
   margin-right: 280px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.buttons_menu {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 60px;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 1300px;
+  height: 900px;
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+  z-index: 9999;
+}
+
+.popup.show {
+  transform: translate(-50%, -55%) scale(0.9);
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 9998;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}

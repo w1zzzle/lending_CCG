@@ -1,5 +1,5 @@
 .contacts {
-    padding-top: 353px;
+    padding-top: 150px;
 
     .contacts__wrapper {
         display: grid;
@@ -7,16 +7,13 @@
     }
     
     .contacts__title-3 {
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 1.1;
+        @include headline-2;
 
         margin-top: 150px;
     }
     
     .contacts__info {
-        margin-right: 160px;
+        margin-right: 226px;
         gap: 80px;
     }
     
@@ -24,19 +21,15 @@
     }
     
     .title-address {
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.3;
+        @include headline-4;
 
-        margin-top: 49px;
+        margin-top: 40px;
     }
     
     .subtitle-address {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.3;
+        @include text;
+
+        margin-top: 16px;
     }
     
     .workstime {
@@ -44,19 +37,15 @@
     }
     
     .title-workstime {
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.3;
+        @include headline-4;
     
-        margin-top: 49px;
+        margin-top: 32px;
     }
     
     .subtitle-workstime {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.3;
+        @include text;
+
+        margin-top: 16px;
     }
     
     /* Detele copyright panel from ya.Map */

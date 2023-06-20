@@ -1,37 +1,32 @@
 .cards {
+    margin-top: 359px;
 
-    .cards__wrapper{
+    .cards__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-between;
-    
-        margin-top: 209px;
+
         gap: 60px;
     }
+
     .card {
-    
+
         img {
             padding-bottom: 18px;
         }
-    
+
     }
-    
+
     .title-2 {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 64px;
-        line-height: 1.1;
-    
-        padding-top: 26px;
+        @include numeric-2;
         border-top: $border-line;
+
+        padding-top: 26px;
     }
-    
+
     .subtitle-2 {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.4;
+        @include caption;
+        color: $gray;
     }
 
 }
@@ -59,4 +54,3 @@
     }
 
 }
-

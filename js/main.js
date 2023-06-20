@@ -138,3 +138,25 @@ function scrollToSection(event) {
   }
 }
 
+const foodMenuButton = document.querySelector('.btn__food');
+const gamesMenuButton = document.querySelector('.btn__games');
+const foodMenuPopup = document.getElementById('foodMenuPopup');
+const gamesMenuPopup = document.getElementById('gamesMenuPopup');
+const overlay = document.getElementById('overlay');
+
+foodMenuButton.addEventListener('click', () => {
+    foodMenuPopup.classList.add('show');
+    overlay.classList.add('show');
+});
+
+gamesMenuButton.addEventListener('click', () => {
+    gamesMenuPopup.classList.add('show');
+    overlay.classList.add('show');
+});
+
+overlay.addEventListener('click', () => {
+    foodMenuPopup.classList.remove('show');
+    gamesMenuPopup.classList.remove('show');
+    overlay.classList.remove('show');
+});
+

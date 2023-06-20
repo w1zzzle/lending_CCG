@@ -1,4 +1,7 @@
 .footer {
+    @include link-title;
+    color: $gray;
+
     margin-top: 27px;
     margin-bottom: 150px;
 
@@ -9,10 +12,12 @@
     
     .politic {
         padding-right: 18px;
+
+        cursor: pointer;
     }
     
     .site-map {
-    
+        cursor: pointer;
     }
 
     .copyright {

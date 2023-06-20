@@ -1,11 +1,8 @@
 .news {
-    padding-top: 150px;
+    margin-top: 150px;
 
     .title-3 {
-        font-family: 'Inter';
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 1.1;
+        @include headline-2;
     }
     
     .news__wrapper {
@@ -14,28 +11,22 @@
         align-items: center;
     
         gap: 60px;
-        padding-top: 80px;
+        padding-top: 40px;
     }
     .news__card {
     
     }
     
     .title-news {
+        @include headline-3;
+        color: $gray;
+
         padding-top: 20px;
-    
-        font-family: 'Inter';
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 1.2;
     }
     
     .subtitle-news {
+        @include text;
         padding-top: 10px;
-    
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.3;
     }
 }
 

@@ -230,46 +230,7 @@ a:active {
 .nav ul li:last-child {
   padding-right: 41px;
 }
-.nav__burger{
-width: 768px;
-padding: 0px;
-}
-#burger, [for=burger]{
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .nav__burger{
-    width: 80%;
-    }
-[for=burger]{
-  display: block;
-  position: fixed;
-  width: 30px;
-  text-align: center;
-  right: 1200px;
-  top: 10px;
-}
-[for=burger]::before{
-  content: '☰';
-}
-#burger:checked + [for=burger]::before{
-  content: '㊂';
-}
-span{
-  display: none;
-}
-#burger:checked + label + span {
-  display: block;
-  top: 0;
-  margin-top: 25px;
-}
-span li {
-  padding: 16px;
-  list-style-type: none;
-  margin-left: 30px;
-}
 
-}
 @media (max-width: 375px) {
   .nav {
     padding: 0px;

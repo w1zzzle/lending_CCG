@@ -67,3 +67,60 @@
     }
 
 }
+
+.nav__burger{
+    width: 375px;
+    padding: 0px;
+    }
+    #burger, [for=burger]{
+      display: none;
+    }
+    @media screen and (max-width: 375px) {
+      .nav__burger{
+        width: 80%;
+        }
+    [for=burger]{
+      display: flex;
+    width: 24px;
+height: 24px;
+flex-shrink: 0;
+    text-align: center;;
+    }
+    [for=burger]::before{
+      content: '☰';
+    }
+    #burger:checked + [for=burger]::before{
+      content: '㊂';
+    }
+    span{
+      display: none;
+    }
+    #burger:checked + label + span {
+      display: block;
+      top: 0;
+      margin-top: 25px;
+    }
+    span li {
+      padding: 16px;
+      list-style-type: none;
+      margin-left: 30px;
+    }
+    }
+    
+    @media screen and (max-width: 375px) {
+        .nav {
+        display: flex;
+         width: 375px;
+         padding: 40px 24px;
+         justify-content: space-between;
+         align-items: flex-start;
+        }
+        .nav__row {
+         .logo {
+          width: 30px;
+          height: 30px;
+          flex-shrink: 0;
+          
+         }
+        }
+    }

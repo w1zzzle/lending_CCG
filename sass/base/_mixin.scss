@@ -120,3 +120,15 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+@mixin smartfon-subtitle-1 {
+    color: var(--white, #FFF);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Caption */
+font-family: $Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 19.6px;
+}

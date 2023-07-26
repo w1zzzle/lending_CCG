@@ -37,20 +37,27 @@
 
         .cards__wrapper {
             display: block;
+            flex-direction: column;
         }
 
         .card {
             position: relative;
-            left: 25%;
-            margin-right: 50%;
-
+            margin-left: 120px;
+            margin-bottom: 50px;
+        }
             img {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding-bottom: 40px;
+                width: 100px;
+            
             }
+        
+        .title-2 {
+            
         }
 
-    }
 
+}
 }

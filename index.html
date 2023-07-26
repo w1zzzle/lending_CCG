@@ -16,17 +16,14 @@
 </head>
 
 <body>
-
+   
     <nav class="nav">
         <div class="container">
             <div class="nav__row">
                 <div class="logo">
                     <img src="./img/logo.png" alt="logo">
                 </div>
-                <div class="nav__burger">
-                    <input type="checkbox" id="burger">
-                    <label for="burger"></label>
-                    <span>
+    
                 <ul>
                     <li><a href="#header">О нас</a></li>
                     <li><a href="#prices">Тарифы</a></li>
@@ -35,7 +32,7 @@
                     <li><a href="kitchen.html" target="_blank">Магазин</a></li>
                 </ul>
                 <button class="btn__call">Позвонить</button>
-            </span>
+           </div>
         </div>
         </div>
             </div>
@@ -83,8 +80,9 @@
     <div class="sliders">
         <div class="container">
             <div class="slider__wrapper">
+                
                 <img src="./img/arrow-left.png" alt="" class="arrow-left" id="arrow-left">
-
+            
                 <div class="wrapper">
                     <div class="slider center">
                         <div class="slider__item">
@@ -105,6 +103,7 @@
                         <div class="slider__item">
                             <img data-lazy="./img/img-slider1.png" alt="" />
                         </div>
+                        
                     </div>
                 </div>
                 <img src="./img/arrow-right.png" alt="" class="arrow-right" id="arrow-right">
@@ -281,6 +280,13 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle ('active');
+            document.querySelector('nav__burger').classList.toggle('open')
+        })
+
+    </script>
 </body>
 
 </html>

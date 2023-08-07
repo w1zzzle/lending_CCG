@@ -35,3 +35,18 @@
     }
 }
 
+@media (max-width: $media_sm) {
+    .news__wrapper {
+        flex-direction: column;
+        display: flex;
+        .news__card {
+            margin-left: 24px;
+            img {
+                height: 333px;
+                width: 327px;
+            }
+          
+        }
+        
+    }
+}

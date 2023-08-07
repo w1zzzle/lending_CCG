@@ -291,14 +291,14 @@ a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 320px;
     height: 56px;
     position: absolute;
   }
   .buttons .btn__more {
     display: flex;
     margin-top: 80px;
-    width: 300px;
+    width: 320px;
     align-items: center;
     justify-content: center;
     height: 56px;
@@ -426,6 +426,10 @@ a:active {
     width: 500px;
     height: 500px;
     flex-shrink: 0;
+    position: center;
+  }
+  .wrapper .slick-track {
+    margin-left: 87px;
   }
 }
 .news {
@@ -464,6 +468,19 @@ a:active {
   margin-top: 10px;
 }
 
+@media (max-width: 375px) {
+  .news__wrapper {
+    flex-direction: column;
+    display: flex;
+  }
+  .news__wrapper .news__card {
+    margin-left: 24px;
+  }
+  .news__wrapper .news__card img {
+    height: 333px;
+    width: 327px;
+  }
+}
 .contacts {
   padding-top: 150px;
   /* Detele copyright panel from ya.Map */
@@ -685,4 +702,26 @@ a:active {
 .overlay.show {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 375px) {
+  .buttons_menu {
+    margin-top: 60px;
+  }
+  .buttons_menu .btn__food {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 56px;
+    position: absolute;
+  }
+  .buttons_menu .btn__games {
+    display: flex;
+    margin-top: 145px;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+  }
 }/*# sourceMappingURL=main.css.map */

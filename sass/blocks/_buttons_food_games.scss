@@ -52,4 +52,24 @@
     visibility: visible;
 }
 
-
+@media (max-width: $media_sm) {
+    .buttons_menu {
+        margin-top: 60px;
+        .btn__food {
+            display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height: 56px;
+                position: absolute;
+        }
+        .btn__games {
+            display: flex;
+                margin-top: 145px;
+                width: 320px;
+                align-items: center;
+                justify-content: center;
+                height: 56px;
+        }
+    }
+}
